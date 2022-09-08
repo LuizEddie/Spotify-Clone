@@ -1,60 +1,63 @@
-body, html, #home{
-    height: 100%
+body,
+html,
+#home {
+    height: 100%;
+    overflow-x: hidden;
 }
 
-body{
+body {
     background: url('../imagens/capa.png'), url('../imagens/ruido.png'), linear-gradient(50deg, #ff4169, #7c26f8);
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-nav.navbar-transparent{
-    background: rgba(0,0,0,0.6);
-    padding: 15px 0px; 
+nav.navbar-transparent {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 0px;
 }
 
-.navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-nav .nav-link {
     color: white
 }
 
-.navbar-light .navbar-nav .nav-link:hover{
+.navbar-light .navbar-nav .nav-link:hover {
     color: #9bf0e1
 }
 
-.navbar-light .navbar-toggler{
-    color: rgba(0,0,0,0.5);
-    border-color: rgba(255,255,255,.1);
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, .1);
 }
 
-.divisor{
-   width: 1px;
-   background: white;
-   margin: 12px 15px;
+.divisor {
+    width: 1px;
+    background: white;
+    margin: 12px 15px;
 }
 
-.capa{
+.capa {
     text-align: center;
 }
 
-.btn-roxo{
+.btn-roxo {
     background: #7c25f8;
 }
 
-.btn-roxo:hover{
+.btn-roxo:hover {
     background: #6207e3;
     color: white;
 }
 
-.btn-branco{
+.btn-branco {
     border: 2px solid #ffffff
 }
 
-.btn-branco:hover{
+.btn-branco:hover {
     background: #ffffff;
     color: #000000;
 }
 
-.btn-custom{
+.btn-custom {
     color: #ffffff;
     border-radius: 500px;
     --webkit-border-radius: 500px;
@@ -64,47 +67,133 @@ nav.navbar-transparent{
     padding: 10px 20px
 }
 
-h1{
+/*Estrutura conteudos*/
+.caixa{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#servicos {
+    background: #ffffff;
+
+}
+
+.albuns {
+    padding: 10px 0;
+}
+
+#servicos h2, h3{
+    color: #7c25f8 
+}
+
+#recursos h3{
+    color: #9bf0e1
+}
+
+#recursos p, h2{
+    color: #ffffff
+}
+
+.rotacionar{
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    padding-left: 80px;
+
+}
+
+/*Rodapé*/
+footer{
+    background: #000;
+    padding: 50px 0 20px 0;
+    position: relative;
+}
+
+footer h4{
+    color: #919496;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+footer .navbar-nav a{
+    color: #ffffff;
+    font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover{
+    color: #9bf8e1;
+    text-decoration: none;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    float: right;
+    margin: 0 5px;
+}
+
+
+/*Tipografia*/
+h1 {
     font-weight: 900;
     letter-spacing: -0.05em;
     margin-bottom: 50px;
     color: #ffffff
 }
 
-@media (max-width: 575.98px){
-    .btn-custom{
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+
+}
+
+
+
+@media (max-width: 575.98px) {
+    .btn-custom {
         margin: 10px 15px;
+        font-size: 1em;
     }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px){
-    h1{
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
         font-size: 3em;
     }
 
-    .btn-custom{
+    .btn-custom {
         margin: 10px 15px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px){
-    h1{
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
         font-size: 4em;
     }
 
-    .btn-custom{
+    .btn-custom {
         margin: 10px 15px;
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px){
-    h1{
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1 {
         font-size: 5em;
     }
 }
 
-@media(min-width: 1200px){
-    h1{
+@media(min-width: 1200px) {
+    h1 {
         font-size: 6em;
     }
 }
