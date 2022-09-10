@@ -67,6 +67,10 @@ nav.navbar-transparent {
     padding: 10px 20px
 }
 
+.carousel-control-next, .carousel-control-prev{
+    width: 5%
+}
+
 /*Estrutura conteudos*/
 .caixa{
     padding-top: 20px;
